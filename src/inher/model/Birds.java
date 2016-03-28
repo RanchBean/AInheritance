@@ -4,7 +4,8 @@ public class Birds
 {
 	private String birdName;
 	private double birdHeight;
-	private boolean isBirdBig;
+	private boolean canBirdKillHuman;
+	
 	public String getBirdName() 
 	{
 		return birdName;
@@ -23,10 +24,10 @@ public class Birds
 	}
 	public boolean getIsBirdBig() 
 	{
-		return isBirdBig;
+		return canBirdKillHuman;
 	}
-	public void setIsBirdBig(boolean isBirdBig) 
+	public void setIsBirdBig(boolean canBirdKillHuman) 
 	{
-		this.isBirdBig = isBirdBig;
+		this.canBirdKillHuman = canBirdKillHuman;
 	}
 }
