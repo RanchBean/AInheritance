@@ -1,6 +1,7 @@
 package inher.model;
 
 import javax.swing.*;
+
 public class Emu extends Birds 
 {
 	public Emu()
@@ -32,15 +33,15 @@ public class Emu extends Birds
 	}
 
 	@Override
-	public void spamTime(int spams) {
-		// TODO Auto-generated method stub
+	public void spamTime(int spams) 
+	{
 		
 	}
 
 	@Override
-	public void punch(int times) {
-		// TODO Auto-generated method stub
-		
+	public void punch(int times) 
+	{
+	
 	}
 	
 }
