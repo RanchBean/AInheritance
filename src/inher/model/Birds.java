@@ -1,6 +1,6 @@
 package inher.model;
 
-public class Birds 
+public abstract class Birds implements Death
 {
 	private String birdName;
 	private double birdHeight;
@@ -22,12 +22,13 @@ public class Birds
 	{
 		this.birdHeight = birdHeight;
 	}
-	public boolean getIsBirdBig() 
+	public boolean getCanBirdKillHuman() 
 	{
 		return canBirdKillHuman;
 	}
-	public void setIsBirdBig(boolean canBirdKillHuman) 
+	public void setCanBirdKillHuman(boolean canBirdKillHuman) 
 	{
 		this.canBirdKillHuman = canBirdKillHuman;
 	}
+
 }
