@@ -2,8 +2,9 @@ package inher.view;
 
 import inher.controller.*;
 import inher.view.*;
+import javax.swing.JFrame;
 
-public class Frame 
+public class Frame extends JFrame
 {
 
 	private Controller inherController;
@@ -16,10 +17,9 @@ public class Frame
 	}
 	private void setupFrame()
 	{
-		
+		this.setContentPane(inherPanel);
+		this.setSize(420,420);
+		this.setVisible(true);
 	}
-	public Controller getBaseController()
-	{
-		return inherController;
-	}
+	
 }
