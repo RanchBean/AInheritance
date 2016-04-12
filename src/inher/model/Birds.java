@@ -1,6 +1,6 @@
 package inher.model;
 
-public abstract class Birds implements Death
+public abstract class Birds implements Death,Comparable<Death>
 {
 	private String birdName;
 	private double birdHeight;
@@ -29,6 +29,34 @@ public abstract class Birds implements Death
 	public void setCanBirdKillHuman(boolean canBirdKillHuman) 
 	{
 		this.canBirdKillHuman = canBirdKillHuman;
+	}
+	public String toString()
+	{
+		String birdDescription = "This bird is object of type " + this.getClass().getName() + "and is that tall " + getBirdHeight();
+		
+		return birdDescription;
+	}
+	/**
+	 * if this object is before or less than compared object return a negative number
+	 * if this object is after/greater than compared object return positive number 
+	 */
+	public int compareTo(Death compared)
+	{
+		int comparedValue;
+	
+					if(this.chanceOfDeath() < compared.chanceOfDeath())
+					{
+						comparedValue = -1;
+					}
+					else if(this.chanceOfDeath() > compared.chanceOfDeath())
+					{
+						comparedValue = 1;
+					}
+					else
+					{
+						comparedValue = 0;	
+					}
+				return comparedValue;
 	}
 
 }
