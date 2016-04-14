@@ -2,7 +2,7 @@ package inher.model;
 
 import javax.swing.*;
 
-public class Emu extends Birds 
+public abstract class Emu extends Birds 
 {
 	public Emu()
 	{

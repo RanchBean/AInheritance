@@ -42,8 +42,9 @@ public abstract class Birds implements Death,Comparable<Death>
 	 */
 	public int compareTo(Death compared)
 	{
-		int comparedValue;
+		int comparedValue = Integer.MIN_VALUE;
 	
+			if(compared instanceof Death)
 					if(this.chanceOfDeath() < compared.chanceOfDeath())
 					{
 						comparedValue = -1;
