@@ -11,15 +11,40 @@ public class Panel extends JPanel
 {
 	private Controller inherController;
 	private SpringLayout inherLayout;
-	private JButton nxtButton;
+	private JButton sortButton;
 	private JScrollPane textScrollBox;
 	public Panel(Controller inherController) 
 	{
 		this.inherController = inherController;
 		inherLayout = new SpringLayout();
-		nxtButton = new JButton("Next");
+		sortButton = new JButton("Sort");
+		setupPane();
+		setupPanel();
+		setupLayout();
+		setupListeners();
+	}
+	private void setupListeners() 
+	{
+		// TODO Auto-generated method stub
+		sortButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(actionEvent click)
+			{
+				inherController.sortButton();
+			}
+		});
+	
+	}
+	private void setupLayout() {
+		// TODO Auto-generated method stub
 		
+	}
+	private void setupPanel() {
+		// TODO Auto-generated method stub
 		
+	}
+	private void setupPane() {
+		// TODO Auto-generated method stub
 		
 	}
 
